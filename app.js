@@ -34,7 +34,7 @@ function handler (req, res) {
                     return res.end("Error: unable to load " + path);
                 }
 
-                res.writeHead(200,{'Content-Type': 'text/css'});
+                res.writeHead(200,{'Content-Type': 'text/plain'});
                 res.end(data);
             });
     } else {
