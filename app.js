@@ -56,7 +56,7 @@ io.sockets.on('connection', function (socket) {
       // Set a timer for when we should stop watering
       setTimeout(function(){
           socket.emit("pong");
-      }, delay);
+      }, delay*1000);
 
   });
   
