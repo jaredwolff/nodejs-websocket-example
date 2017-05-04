@@ -11,6 +11,14 @@ This repository was created for use in the following blog post:
 
 If you use this code or found this example useful feel free to link back to the article or this Github page.
 
+## Requirements
+
+**node.js v7.8.0**
+
+Install socket.io using included package file:
+
+`npm install`
+
 ## License
 
 MIT License: for more information see LICENSE
