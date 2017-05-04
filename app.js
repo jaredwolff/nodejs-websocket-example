@@ -1,8 +1,10 @@
 var app = require('http').createServer(handler)
-  , io = require('socket.io').listen(app)
-  , url= require('url')
-  , fs = require('fs')
+var io = require('socket.io')(app)
+var url = require('url')
+var fs = require('fs')
 
+
+//This will open a server at localhost:5000. Navigate to this in your browser.
 app.listen(5000);
 
 // Http handler function
@@ -48,14 +50,14 @@ function handler (req, res) {
 io.sockets.on('connection', function (socket) {
 
   // If we recieved a command from a client to start watering lets do so
-  socket.on('ping', function(data) {
+  socket.on('example-ping', function(data) {
       console.log("ping");
 
       delay = data["duration"];
 
       // Set a timer for when we should stop watering
       setTimeout(function(){
-          socket.emit("pong");
+          socket.emit("example-pong");
       }, delay*1000);
 
   });

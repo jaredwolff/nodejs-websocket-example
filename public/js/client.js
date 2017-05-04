@@ -1,11 +1,16 @@
-var socket = io.connect('http://localhost:5000');
+var socket = io('http://localhost:5000');
 
-socket.on('pong', function (data) {
+socket.on('example-pong', function (data) {
     console.log("pong");
 });
 
-$(document).ready(function() {
-    $("#hello").click(function(){
-        socket.emit('ping', { duration: 2 });
-    }); 
+window.addEventListener("load", function(){
+
+  var button = document.getElementById('hello');
+
+  button.addEventListener('click', function() {
+      console.log("ping");
+      socket.emit('example-ping', { duration: 2 });
+  });
+
 });
