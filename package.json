@@ -1,0 +1,28 @@
+{
+  "name": "nodejs-websocket-example",
+  "version": "1.0.0",
+  "description": "Websocket example using Node.js from www.jaredwolff.com",
+  "main": "app.js",
+  "scripts": {
+    "default": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaredwolff/nodejs-websocket-example.git"
+  },
+  "keywords": [
+    "websocket",
+    "node",
+    "server"
+  ],
+  "author": "Jared Wolff",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jaredwolff/nodejs-websocket-example/issues"
+  },
+  "homepage": "https://github.com/jaredwolff/nodejs-websocket-example#readme",
+  "devDependencies": {
+    "socket.io": "^1.7.3"
+  }
+}
